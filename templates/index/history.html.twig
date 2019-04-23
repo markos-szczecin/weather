@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}History{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('history') }}
+{% endblock %}
+{% block body %}
+    <div id="statistics"></div>
+{% endblock %}
+{% block javascripts %}
+    <script>
+        symfonyData.weathersLength = '{{ weathers_length }}';
+        symfonyData.statistics = JSON.parse('{{ statistics | raw }}');
+    </script>
+    {{ encore_entry_script_tags('history') }}
+
+{% endblock %}
