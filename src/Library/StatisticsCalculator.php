@@ -1,5 +1,7 @@
 <?php
-
+/**
+* TODO Zoptymalizować pod kątem skalowalności. Trzymać statystyki w bazie i aktualizować zamiast wyliczać 
+**/
 
 namespace App\Library;
 
